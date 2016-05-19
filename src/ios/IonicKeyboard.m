@@ -19,12 +19,12 @@
     nilImp = imp_implementationWithBlock(^(id _s) {
         return nil;
     });
-    
+
     //set defaults
     self.hideKeyboardAccessoryBar = YES;
     self.disableScroll = NO;
     //self.styleDark = NO;
-    
+
     NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
     __weak IonicKeyboard* weakSelf = self;
     _keyboardShowObserver = [nc addObserverForName:UIKeyboardWillShowNotification
@@ -91,11 +91,11 @@
         method_setImplementation(wkMethod, wkOriginalImp);
         method_setImplementation(uiMethod, uiOriginalImp);
     }
-    
+
     _hideKeyboardAccessoryBar = hideKeyboardAccessoryBar;
 }
 
-/*
+
 - (BOOL)styleDark {
     return _styleDark;
 }
@@ -113,7 +113,7 @@
 
     _styleDark = styleDark;
 }
-*/
+
 
 
 /* ------------------------------------------------------------- */
@@ -161,7 +161,7 @@
     NSLog(@"Showing keyboard not supported in iOS due to platform limitations.");
 }
 
-/*
+
 - (void) styleDark:(CDVInvokedUrlCommand*)command {
     if (!command.arguments || ![command.arguments count]){
       return;
@@ -170,7 +170,7 @@
 
     self.styleDark = [value boolValue];
 }
-*/
+
 
 @end
 
