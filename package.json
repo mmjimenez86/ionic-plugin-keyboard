@@ -1,6 +1,6 @@
 {
   "name": "sam-plugin-keyboard-color",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "cordova": {
     "id": "sam-plugin-keyboard-color",
     "platforms": [
