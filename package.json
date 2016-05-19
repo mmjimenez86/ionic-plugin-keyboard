@@ -1,8 +1,8 @@
 {
-  "name": "ionic-plugin-keyboard",
-  "version": "2.2.0",
+  "name": "sam-plugin-keyboard-color",
+  "version": "0.0.1",
   "cordova": {
-    "id": "ionic-plugin-keyboard",
+    "id": "sam-plugin-keyboard-color",
     "platforms": [
       "android",
       "ios",

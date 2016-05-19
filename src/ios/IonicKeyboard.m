@@ -6,7 +6,7 @@
 
 @synthesize hideKeyboardAccessoryBar = _hideKeyboardAccessoryBar;
 @synthesize disableScroll = _disableScroll;
-//@synthesize styleDark = _styleDark;
+@synthesize styleDark = _styleDark;
 
 - (void)pluginInitialize {
 
@@ -23,7 +23,7 @@
     //set defaults
     self.hideKeyboardAccessoryBar = YES;
     self.disableScroll = NO;
-    //self.styleDark = NO;
+    self.styleDark = NO;
 
     NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
     __weak IonicKeyboard* weakSelf = self;
