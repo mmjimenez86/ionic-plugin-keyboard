@@ -10,6 +10,8 @@
 
 - (void)pluginInitialize {
 
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finishLaunching:) name:UIApplicationDidFinishLaunchingNotification object:nil];
+
     Class wkClass = NSClassFromString([@[@"UI", @"Web", @"Browser", @"View"] componentsJoinedByString:@""]);
     wkMethod = class_getInstanceMethod(wkClass, @selector(inputAccessoryView));
     wkOriginalImp = method_getImplementation(wkMethod);
@@ -171,12 +173,6 @@
     self.styleDark = [value boolValue];
 }
 
-- (void)pluginInitialize
-{
-
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finishLaunching:) name:UIApplicationDidFinishLaunchingNotification object:nil];
-
-}
 
 - (void)finishLaunching:(NSNotification *)notification
 {
