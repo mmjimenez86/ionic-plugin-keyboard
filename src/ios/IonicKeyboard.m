@@ -180,7 +180,7 @@
 
 - (void)finishLaunching:(NSNotification *)notification
 {
-    [[UIWebBrowserView appearance] setKeyboardAppearance:UIKeyboardAppearanceDark];
+    [[UITextField appearance] setKeyboardAppearance:UIKeyboardAppearanceDark];
 }
 
 
