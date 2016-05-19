@@ -171,6 +171,18 @@
     self.styleDark = [value boolValue];
 }
 
+- (void)pluginInitialize
+{
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finishLaunching:) name:UIApplicationDidFinishLaunchingNotification object:nil];
+
+}
+
+- (void)finishLaunching:(NSNotification *)notification
+{
+    [[UIWebBrowserView appearance] setKeyboardAppearance:UIKeyboardAppearanceDark];
+}
+
 
 @end
 
