@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="sam-plugin-keyboard-color"
-    version="0.0.2">
+    version="0.0.3">
     <name>SAM Keyboard</name>
     <description>SAM Keyboard Color Plugin</description>
     <license>Apache 2.0</license>
